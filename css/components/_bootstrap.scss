@@ -4,6 +4,9 @@
 .text-shadow {
   text-shadow: 0 0 10px rgba(0,0,0,0.8);
 }
+.box-shadow{
+  box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
 $alignment: ("left","center", "right", "justify");
 @each $align in $alignment {
   .text-#{$align}{

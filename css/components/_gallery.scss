@@ -1,0 +1,21 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+
+  .gallery__item{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    padding: 0.6rem;
+  }
+  @media (max-width: 1199.98px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 991.98px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
