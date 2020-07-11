@@ -3334,7 +3334,24 @@ h6,
   font-size: 2.4rem;
 }
 
-a, button {
+.btn-green {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 6rem;
+  color: #fff;
+  background: #B4D336;
+  border-radius: 29%/200%;
+  font-size: 2.4rem;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+}
+.btn-green:focus {
+  outline: none;
+}
+
+.btn-orange {
   position: relative;
   display: inline-block;
   padding: 1rem 6rem;
@@ -3344,11 +3361,27 @@ a, button {
   font-size: 2.4rem;
   border: none;
   cursor: pointer;
-  letter-spacing: 2px;
   overflow: hidden;
   text-decoration: none;
 }
-a:focus, button:focus {
+.btn-orange:focus {
+  outline: none;
+}
+
+.btn-blue {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 6rem;
+  color: #fff;
+  background: #0067A3;
+  border-radius: 29%/200%;
+  font-size: 2.4rem;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+}
+.btn-blue:focus {
   outline: none;
 }
 
@@ -3356,7 +3389,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "copy logo rrss";
-  background-color: var(--dark_blue);
+  background-color: #0067A3;
   align-items: center;
   text-align: center;
   gap: 3rem;
@@ -3365,7 +3398,7 @@ footer {
 
 .footer__copy {
   grid-area: copy;
-  color: var(--white);
+  color: #fff;
 }
 
 .footer__rrss {
@@ -3388,6 +3421,10 @@ footer {
     padding: 3rem;
   }
 }
+.img-fluid {
+  max-width: 100%;
+}
+
 html,
 body {
   scroll-behavior: smooth;

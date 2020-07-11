@@ -1,18 +1,26 @@
-a, button {
+@mixin button($color) {
   position: relative;
   display: inline-block;
   padding: 1rem 6rem;
   color: #fff;
-  background: $orange;
+  background: $color;
   border-radius: 29% / 200%;
   font-size: 2.4rem;
   border: none;
   cursor: pointer;
-  letter-spacing: 2px;
   overflow: hidden;
   text-decoration: none;
 
   &:focus{
       outline: none;
   }
+}
+.btn-green {
+  @include button($green);
+}
+.btn-orange {
+  @include button($orange);
+}
+.btn-blue{
+  @include button($blue);
 }

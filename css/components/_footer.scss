@@ -2,7 +2,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas: "copy logo rrss";
-  background-color: var(--dark_blue);
+  background-color: $blue;
   align-items: center;
   text-align: center;
   gap: 3rem;
@@ -11,7 +11,7 @@ footer {
 
 .footer__copy {
   grid-area: copy;
-  color: var(--white);
+  color: $white;
 }
 
 .footer__rrss {
