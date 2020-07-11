@@ -23,7 +23,6 @@
   font-display: swap;
 }
 
-
 @import "components/normalize";
 @import "components/variables";
 @import "components/paddings";
@@ -31,6 +30,7 @@
 @import "components/button";
 @import "components/footer";
 @import "components/bootstrap";
+
 html,
 body {
   scroll-behavior: smooth;
@@ -41,3 +41,18 @@ body {
   margin: 0;
   padding: 0;
 }
+
+// Sección 1
+#S1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/panel-solar.jpg) no-repeat center bottom / cover;
+  height: 80vh;
+  padding: 3rem;
+  @media (max-width: 991.98px) { 
+    background: url(../img/panel-solar.jpg) no-repeat 80% bottom/cover;
+  }
+}
+// =========

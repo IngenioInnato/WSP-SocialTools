@@ -1,3 +1,15 @@
+.text-light, .text-white {
+  color: $white;
+}
+.text-shadow {
+  text-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+$alignment: ("left","center", "right", "justify");
+@each $align in $alignment {
+  .text-#{$align}{
+    text-align: #{$align};
+  }
+}
 .img-fluid{
   max-width: 100%;
 }
