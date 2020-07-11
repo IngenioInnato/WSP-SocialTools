@@ -1,0 +1,36 @@
+
+@each $breakName,
+$breakValue in $breakpoints {
+  @each $sideName,
+  $sideValue in $sides {
+    @for $i from 0 through 10 {
+      $property: if($sideName=='', '', -#{$sideValue});
+      $space: 0.6 * $i;
+      $selector: '';
+      @if $breakName !="" {
+        $selector: #{$sideName}-#{$breakName}-#{$i};
+      }
+      @else {
+        $selector: #{$sideName}-#{$i};
+      }
+      @if $breakName !="" {
+        @media (min-width: $breakValue) {
+          .m#{$selector} {
+            margin#{$property}: #{$space}rem;
+          }
+          .p#{$selector} {
+            padding#{$property}: #{$space}rem;
+          }
+        }
+      }
+      @else {
+        .m#{$selector} {
+          margin#{$property}: #{$space}rem;
+        }
+        .p#{$selector} {
+          padding#{$property}: #{$space}rem;
+        }
+      }
+    }
+  }
+}

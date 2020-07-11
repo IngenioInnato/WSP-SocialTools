@@ -4,7 +4,8 @@
   "description": "��#\u0000 \u0000W\u0000S\u0000P\u0000-\u0000S\u0000a\u0000l\u0000e\u0000s\u0000T\u0000o\u0000o\u0000l\u0000s\u0000\r\u0000 \u0000",
   "main": "index.html",
   "scripts": {
-    "test": "git add -A && git commit -m \"Añadiendo cambios y mejoras\" && git push"
+    "test": "git add -A && git commit -m \"Agregados cambios y mejoras\" && git push",
+    "scss": "sass --watch css"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/IngenioInnato/WSP-SalesTools/issues"
   },
-  "homepage": "https://github.com/IngenioInnato/WSP-SalesTools#readme"
+  "homepage": "https://github.com/IngenioInnato/WSP-SalesTools#readme",
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
 }

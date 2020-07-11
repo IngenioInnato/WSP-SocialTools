@@ -1,0 +1,43 @@
+/* BreakPoints 
+@media (max-width: 575.98px) { ... }
+@media (max-width: 767.98px) { ... }
+@media (max-width: 991.98px) { ... }
+@media (max-width: 1199.98px) { ... }
+
+@media (min-width: 576px) { ... }
+@media (min-width: 768px) { ... }
+@media (min-width: 992px) { ... }
+@media (min-width: 1200px) { ... }
+*/
+
+@font-face {
+  font-family: 'Avenir';
+  src: local('Avenir'), local('Avenir'), url('../font/avenir/regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  font-weight: 800;
+  src: local('Avenir Bold'), local('Avenir Bold'), url('../font/avenir/bold.woff') format('woff');
+  font-display: swap;
+}
+
+
+@import "components/normalize";
+@import "components/variables";
+@import "components/paddings";
+@import "components/font";
+@import "components/button";
+@import "components/footer";
+
+html,
+body {
+  scroll-behavior: smooth;
+  font-size: 1rem;
+  /* overflow-x: hidden; */
+  list-style-position: inside;
+  font-family: $font;
+  margin: 0;
+  padding: 0;
+}
