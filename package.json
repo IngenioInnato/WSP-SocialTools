@@ -1,5 +1,5 @@
 {
-  "name": "salestools",
+  "name": "socialtools",
   "version": "1.0.0",
   "description": "��#\u0000 \u0000W\u0000S\u0000P\u0000-\u0000S\u0000a\u0000l\u0000e\u0000s\u0000T\u0000o\u0000o\u0000l\u0000s\u0000\r\u0000 \u0000",
   "main": "index.html",
@@ -9,16 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IngenioInnato/WSP-SalesTools.git"
+    "url": "git+https://github.com/IngenioInnato/WSP-SocialTools.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/IngenioInnato/WSP-SalesTools/issues"
+    "url": "https://github.com/IngenioInnato/WSP-SocialTools/issues"
   },
-  "homepage": "https://github.com/IngenioInnato/WSP-SalesTools#readme",
+  "homepage": "https://github.com/IngenioInnato/WSP-SocialTools#readme",
   "dependencies": {
+    "clipboard-polyfill": "^3.0.0-pre5",
     "vue": "^2.6.11"
   }
 }
