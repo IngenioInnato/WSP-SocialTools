@@ -6,122 +6,18 @@ Vue.component('gallery', {
     </div>
   </div>
   `,
+  // https://gist.github.com/dvreed77/c37759991b0723eebef3647015495253
+  // Otra manera de hacer copy and paste
   props: {
-    // file: {
-    //   type: String,
-    //   required: true,
-    //   default: ""
-    // }
+    file: {
+      type: String,
+      required: true,
+      default: ""
+    }
   },
   data() {
     return {
-      imgData: [
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200117.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200120.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200124.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200127.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200131.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200217.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200308.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200311.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200313.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200422.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200510.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200515.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200527.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200530.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200605.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200608.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200615.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200621.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200708.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200710.jpg",
-          "date" : ""
-        }, 
-        {
-          "name" : "",
-          "image": "./img/post-us/fb-20200117.jpg",
-          "date" : ""
-        }
-      ]
+      imgData: []
     }
   },
   methods: { 
@@ -131,11 +27,26 @@ Vue.component('gallery', {
       let folder= window.location.hostname + dir + "/";
       let link = folder + img.substr(2);
       clipboard.writeText(link);
+    },
+    fillData(){
+      return `
+
+      `
+    },
+    getData(){
+      // axios
+      axios.get("../" + this.file)
+      .then(response => {
+        // console.log(response); 
+        this.imgData = response.data;
+      });
     }
   },
-  computed: {
-
+  mounted() {
+    this.getData();
   },
+  watch: {
+  }
 });
 
 
