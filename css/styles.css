@@ -3349,6 +3349,27 @@ h6,
 .btn-green:focus {
   outline: none;
 }
+.btn-green span {
+  position: absolute;
+  background: #fff;
+  transform: translate(-50%);
+  animation: animate 1s linear infinite;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  -webkit-animation: animate 1s linear infinite;
+}
+@keyframes animate {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+  }
+}
 
 .btn-orange {
   position: relative;
@@ -3366,6 +3387,27 @@ h6,
 .btn-orange:focus {
   outline: none;
 }
+.btn-orange span {
+  position: absolute;
+  background: #fff;
+  transform: translate(-50%);
+  animation: animate 1s linear infinite;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  -webkit-animation: animate 1s linear infinite;
+}
+@keyframes animate {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+  }
+}
 
 .btn-blue {
   position: relative;
@@ -3382,6 +3424,27 @@ h6,
 }
 .btn-blue:focus {
   outline: none;
+}
+.btn-blue span {
+  position: absolute;
+  background: #fff;
+  transform: translate(-50%);
+  animation: animate 1s linear infinite;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  -webkit-animation: animate 1s linear infinite;
+}
+@keyframes animate {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 footer {
