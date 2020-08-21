@@ -40,7 +40,7 @@ let gallery= Vue.component('gallery', {
     },
     getData(){
       // axios
-      axios.get("../" + this.file)
+      axios.get("./" + this.file)
       .then(response => {
         // console.log(response); 
         this.imgData = response.data.reverse();
