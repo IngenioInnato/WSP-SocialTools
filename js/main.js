@@ -62,7 +62,7 @@ let app = new Vue({
 
 // Animaciones
 document.addEventListener("DOMContentLoaded", function() {
-  var btn = document.querySelector(".btn-orange");
+  var btn = document.querySelectorAll(".btn-ripple");
   btn.forEach(el => {
     el.addEventListener("click", function(e) {
       let x = e.clientX - e.target.offsetLeft;
@@ -71,9 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
       ripple.style.left = `${x}px`;
       ripple.style.top = `${y}px`;
       this.appendChild(ripple);
-      serTimeOut(() => {
-        ripple.remove();
-      }, 1000);
+
     });
   });
 });
