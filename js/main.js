@@ -61,8 +61,8 @@ let app = new Vue({
 });
 
 // Animaciones
-document.addEventListener("DOMContentLoaded", function() {
-  var btn = document.querySelectorAll(".btn-ripple");
+// document.addEventListener("DOMContentLoaded", function() {
+  let btn = document.querySelectorAll(".btn-ripple");
   btn.forEach(el => {
     el.addEventListener("click", function(e) {
       let x = e.clientX - e.target.offsetLeft;
@@ -74,4 +74,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
     });
   });
-});
+// });

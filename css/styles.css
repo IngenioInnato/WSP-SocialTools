@@ -3343,32 +3343,10 @@ h6,
   font-size: 1.2rem;
   border: none;
   cursor: pointer;
-  overflow: hidden;
   text-decoration: none;
 }
 .btn-green:focus {
   outline: none;
-}
-.btn-green span {
-  position: absolute;
-  background: #fff;
-  transform: translate(-50%);
-  animation: animate 1s linear infinite;
-  -webkit-transform: translate(-50%);
-  -moz-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  -o-transform: translate(-50%);
-  -webkit-animation: animate 1s linear infinite;
-}
-@keyframes animate {
-  0% {
-    width: 0px;
-    height: 0px;
-  }
-  100% {
-    width: 50px;
-    height: 50px;
-  }
 }
 
 .btn-orange {
@@ -3381,32 +3359,10 @@ h6,
   font-size: 1.2rem;
   border: none;
   cursor: pointer;
-  overflow: hidden;
   text-decoration: none;
 }
 .btn-orange:focus {
   outline: none;
-}
-.btn-orange span {
-  position: absolute;
-  background: #fff;
-  transform: translate(-50%);
-  animation: animate 1s linear infinite;
-  -webkit-transform: translate(-50%);
-  -moz-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  -o-transform: translate(-50%);
-  -webkit-animation: animate 1s linear infinite;
-}
-@keyframes animate {
-  0% {
-    width: 0px;
-    height: 0px;
-  }
-  100% {
-    width: 50px;
-    height: 50px;
-  }
 }
 
 .btn-blue {
@@ -3419,23 +3375,24 @@ h6,
   font-size: 1.2rem;
   border: none;
   cursor: pointer;
-  overflow: hidden;
   text-decoration: none;
 }
 .btn-blue:focus {
   outline: none;
 }
-.btn-blue span {
+
+.btn-ripple > span {
   position: absolute;
   background: #fff;
-  transform: translate(-50%);
+  transform: translate(-50%, -50%);
   animation: animate 1s linear infinite;
-  -webkit-transform: translate(-50%);
-  -moz-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  -o-transform: translate(-50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
   -webkit-animation: animate 1s linear infinite;
 }
+
 @keyframes animate {
   0% {
     width: 0px;
@@ -3446,7 +3403,6 @@ h6,
     height: 50px;
   }
 }
-
 footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
