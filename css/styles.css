@@ -3518,6 +3518,7 @@ body {
 @media (max-width: 991.98px) {
   #S1 {
     background: url(../img/panel-solar.jpg) no-repeat 80% bottom/cover;
+    height: auto;
   }
 }
 
