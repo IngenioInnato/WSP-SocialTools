@@ -9,7 +9,7 @@ let gallery= Vue.component('gallery', {
   </div>
   </div>
   <div class="mt-3 text-center">
-  <button @click="n -= 9" class="btn-orange btn-ripple" :style="{'display': (n > 9) ? 'inline-block' : 'none'}">Less</button>
+  <button @click="n -= 9" class="btn-orange btn-ripple mb-lg-0 mb-3" :style="{'display': (n > 9) ? 'inline-block' : 'none'}">Less</button>
   <button @click="n += 9" class="btn-orange btn-ripple" :style="{'display': (n < imgLength) ? 'inline-block': 'none'}">More</button>
   </div>
   </div>
