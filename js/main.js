@@ -50,7 +50,6 @@ let gallery= Vue.component('gallery', {
     },
     changeStatus(el) {
       let button = el.currentTarget;
-      console.log(button);
 
       button.innerHTML = "Copied!";
       button.style.background = "#0067A3"
