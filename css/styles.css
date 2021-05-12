@@ -3529,7 +3529,6 @@ body {
   color: #fff;
   text-decoration: none;
   transition: color 0.5s ease;
-  -webkit-animation: color 0.5s ease;
   -webkit-transition: color 0.5s ease;
   -moz-transition: color 0.5s ease;
   -ms-transition: color 0.5s ease;

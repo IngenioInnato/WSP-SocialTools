@@ -4,7 +4,7 @@ let gallery= Vue.component('gallery', {
   template:/*template*/ `
   <div class="layout">
   <div class="gallery">
-  <div class="gallery__item" v-for="img in imgData.slice(0,n)" :style="{'background': 'url('+ img.image + ') no-repeat center / cover'}">
+  <div class="gallery__item" v-for="img in imgData.slice(0,n)" :style="{'background':  isEng ? 'url('+ img.image + ') no-repeat center / cover' : 'url(../'+ img.image + ') no-repeat center / cover'}">
   <button class="btn-orange btn-ripple" @click="shareImg($event, img.image)">Share</button>
   </div>
   </div>
@@ -27,7 +27,8 @@ let gallery= Vue.component('gallery', {
     return {
       imgData: [],
       imgLength: 0,
-      n: 9
+      n: 9,
+      isEng: lang === "en"
     }
   },
   methods: { 
@@ -51,10 +52,10 @@ let gallery= Vue.component('gallery', {
     changeStatus(el) {
       let button = el.currentTarget;
 
-      button.innerHTML = "Copied!";
+      button.innerHTML = lang === "en"? "Copied!": "¡Copiado!";
       button.style.background = "#0067A3"
       setInterval(() => {
-        button.innerHTML = "Share";
+        button.innerHTML = lang === "en"? "Share": "Compartir";
         button.style.background = "#F88E2A"
       }, 1500)
     }
